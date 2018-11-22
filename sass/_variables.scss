@@ -12,8 +12,8 @@ $mainFontFamily: 'Josefin Sans', "Trebuchet MS", Helvetica, sans-serif; /* defau
 $headerFontFamily: Cardo, "Palatino Linotype", "Book Antiqua", Palatino, serif; /* serif for the headings */
 
 // font sizes
+$fScale: 1.414;
 @function fs($level: 1) {
-    $fScale: 1.414;
     $fs: 1;
     @for $i from 1 to $level {
         $fs: $fs * $fScale;
