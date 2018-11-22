@@ -8,8 +8,8 @@ $lightGrey: #d4d4d4;
 $darkGrey: #222;
 
 // fonts
-$mainFontFamily: 'Josefin Sans', ‘Trebuchet MS’, Helvetica, sans-serif; /* default for whole page */
-$headerFontFamily: Cardo, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; /* serif for the headings */
+$mainFontFamily: 'Josefin Sans', "Trebuchet MS", Helvetica, sans-serif; /* default for whole page */
+$headerFontFamily: Cardo, "Palatino Linotype", "Book Antiqua", Palatino, serif; /* serif for the headings */
 
 // font sizes
 @function fs($level: 1) {

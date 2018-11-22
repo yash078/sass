@@ -244,7 +244,7 @@ header {
 .content2 {
     h3 {
         font-size: fs(3);
-        padding: 1rem 2re 0.5rem;
+        padding: 1rem 2rem 0.5rem;
     }
 
     h4 {
@@ -602,7 +602,7 @@ footer {
 
     header {
         nav {
-            @include flexSetup("", row, space-aroundd, center);
+            @include flexSetup("", row, space-around, center);
             /* mobile first */
             width: 100%;
             padding: 0rem 0;

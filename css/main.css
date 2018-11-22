@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* default for whole page */
 /* serif for the headings */
 * {
@@ -14,14 +13,14 @@
 
 html {
   font-size: 16px;
-  font-family: "Josefin Sans", ‘Trebuchet MS’, Helvetica, sans-serif;
+  font-family: "Josefin Sans", "Trebuchet MS", Helvetica, sans-serif;
   line-height: 1.6;
   font-weight: 400;
 }
 
 h4, h3, h2, h1 {
   font-weight: 700;
-  font-family: Cardo, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+  font-family: Cardo, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 ul {
@@ -190,7 +189,7 @@ header h1 i.fa-lg ~ span {
 
 .content2 h3 {
   font-size: 1.999396rem;
-  padding: 1rem 2re 0.5rem;
+  padding: 1rem 2rem 0.5rem;
 }
 .content2 h4 {
   font-size: 1.999396rem;
@@ -530,7 +529,7 @@ footer .row {
 
   header nav {
     flex-direction: row;
-    justify-content: space-aroundd;
+    justify-content: space-around;
     align-items: center;
     /* mobile first */
     width: 100%;
