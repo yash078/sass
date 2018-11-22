@@ -1,0 +1,82 @@
+// select language to display in footer
+@mixin lang($lang) {
+    $otherLangs: map-keys($map: map-remove($languages2, $lang));
+
+    &[lang="#{$lang}"] {
+        display: block;
+    }
+
+    &[lang="#{nth($otherLangs,1)}"],
+    &[lang="#{nth($otherLangs,2)}"],
+    &[lang="#{nth($otherLangs,3)}"] {
+        display: none;
+    }
+}
+
+// setting up a flex style
+@mixin flexSetup($display: "yes", $dir:column, $justify: flex-start, $alignItems: stretch) {
+    @if $display !="" {
+        display: flex;
+    }
+
+    @if $dir !="" {
+        flex-direction: $dir;
+    }
+
+    @if $justify !="" {
+        justify-content: $justify;
+    }
+
+    @if $alignItems !="" {
+        align-items: $alignItems;
+    }
+
+    @content;
+}
+
+// allowing to enter column numbers instead of % in flex 
+// style
+@mixin flex($cols, $grow: "", $shrink: "") {
+    flex-basis: (100%/$cols);
+
+    @if $grow !="" {
+        flex-grow: #{$grow};
+    }
+
+    @if $shrink !="" {
+        flex-shrink: #{$shrink};
+    }
+}
+
+// media querries
+@mixin mQ($min-width, $max-width, $media: all) {
+    @if $max-width !="" {
+        @media #{$media} and (min-width: #{$min-width}) and (max-width: #{$max-width}) {
+            @content;
+        }
+    }
+
+    @else {
+        @media #{$media} and (min-width: #{$min-width}) {
+            @content;
+        }
+    }
+}
+
+// SASS doesn't allow to resue extends
+// accorss media querries, these mixins
+// are used as a work around!
+@mixin h1-i-fa-lg {
+    display: inline;
+    vertical-align: baseline;
+    float: none;
+    font-size: fs(5);
+    line-height: 6.3968rem;
+}
+
+@mixin h1-i-fa-lg-span {
+    float: none;
+    letter-spacing: 0.25rem;
+    font-size: fs(5);
+    text-align: left;
+}
