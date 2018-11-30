@@ -169,7 +169,7 @@ header {
             text-align: center;
             text-decoration: none;
             color: $darkGrey;
-            font-size: fs(1);
+            font-size: fs(2);
             letter-spacing: 0.25rem;
             border: 1px solid $lightGrey;
             border-bottom: none;
@@ -202,7 +202,7 @@ header {
             ~span {
                 float: right;
                 width: 75%;
-                font-size: fs(4);
+                font-size: fs(5);
                 //2 lines of 3.998 * 1.6 = 12.7936
                 padding-left: 1rem;
                 text-align: right;

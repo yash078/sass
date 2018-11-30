@@ -130,7 +130,7 @@ header nav > a {
   text-align: center;
   text-decoration: none;
   color: #222;
-  font-size: 1rem;
+  font-size: 1.414rem;
   letter-spacing: 0.25rem;
   border: 1px solid #d4d4d4;
   border-bottom: none;
@@ -159,7 +159,7 @@ header h1 i.fa-lg {
 header h1 i.fa-lg ~ span {
   float: right;
   width: 75%;
-  font-size: 2.827145944rem;
+  font-size: 3.9975843648rem;
   padding-left: 1rem;
   text-align: right;
 }
