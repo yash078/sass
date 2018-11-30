@@ -329,7 +329,7 @@ footer {
 /***********************************************
                 MEDIA QUERIES
 ***********************************************/
-@include mQ(701px, 900px) {
+@include mQ($sm+1, $md) {
     header {
         width: 700px;
         margin: 0 auto;
@@ -439,7 +439,7 @@ footer {
     }
 }
 
-@include mQ(901px, 1400px) {
+@include mQ($md+1, $lg) {
     header {
         width: 900px;
         margin: 0 auto;
@@ -575,7 +575,7 @@ footer {
     }
 }
 
-@include mQ(1401px, "") {
+@include mQ($lg+1, "") {
     header {
         width: 1400px;
         margin: 0 auto;
