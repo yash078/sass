@@ -345,13 +345,9 @@ footer {
   }
   footer .row > * {
     flex-basis: 50%;
-    flex-grow: 1;
-    flex-shrink: 0;
   }
   footer .row.last-row > * {
     flex-basis: 100%;
-    flex-grow: 1;
-    flex-shrink: 0;
   }
 
   section.content2 h4 {
